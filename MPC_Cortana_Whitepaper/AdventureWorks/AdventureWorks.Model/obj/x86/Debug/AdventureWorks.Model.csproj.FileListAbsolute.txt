@@ -1,0 +1,50 @@
+E:\AdventureWorks\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.dll
+E:\AdventureWorks\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.pdb
+E:\AdventureWorks\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.pri
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Shared.dll
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Shared.pdb
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\priconfig.xml
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\priconfig.xml.intermediate
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\layout.resfiles
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\layout.resfiles.intermediate
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\resources.resfiles
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\resources.resfiles.intermediate
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\pri.resfiles
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\pri.resfiles.intermediate
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\qualifiers.txt
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\qualifiers.txt.intermediate
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
+E:\AdventureWorks - backup\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.dll
+E:\AdventureWorks - backup\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.pdb
+E:\AdventureWorks - backup\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.pri
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Shared.dll
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Shared.pdb
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\priconfig.xml
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\priconfig.xml.intermediate
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\layout.resfiles
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\layout.resfiles.intermediate
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\resources.resfiles
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\resources.resfiles.intermediate
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\pri.resfiles
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\pri.resfiles.intermediate
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\qualifiers.txt
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\qualifiers.txt.intermediate
+E:\AdventureWorks - backup\AdventureWorks.Model\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.dll
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.pdb
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\bin\x86\Debug\AdventureWorks.Shared.pri
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Shared.dll
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\AdventureWorks.Shared.pdb
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\priconfig.xml
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\priconfig.xml.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\layout.resfiles
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\layout.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\resources.resfiles
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\resources.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\pri.resfiles
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\pri.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\qualifiers.txt
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\qualifiers.txt.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

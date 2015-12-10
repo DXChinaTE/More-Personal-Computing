@@ -1,0 +1,17 @@
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\bin\x86\Release\AdventureWorks.Shared.dll
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\bin\x86\Release\AdventureWorks.Shared.pdb
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\bin\x86\Release\AdventureWorks.Shared.pri
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\AdventureWorks.Model.csprojResolveAssemblyReference.cache
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\AdventureWorks.Shared.dll
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\AdventureWorks.Shared.pdb
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\priconfig.xml
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\priconfig.xml.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\layout.resfiles
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\layout.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\resources.resfiles
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\resources.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\pri.resfiles
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\pri.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\qualifiers.txt
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\qualifiers.txt.intermediate
+E:\微软项目\交付\AdventureWorks\AdventureWorks.Model\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt

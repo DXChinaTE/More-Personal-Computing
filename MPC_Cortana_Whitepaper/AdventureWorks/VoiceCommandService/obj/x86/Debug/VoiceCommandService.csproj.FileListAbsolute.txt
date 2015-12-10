@@ -1,0 +1,65 @@
+E:\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.winmd
+E:\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.pdb
+E:\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.pri
+E:\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.dll
+E:\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.pdb
+E:\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.pri
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\VoiceCommandService.csprojResolveAssemblyReference.cache
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.winmd
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.pdb
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.winmdobj
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.compile.pdb
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\priconfig.xml
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\priconfig.xml.intermediate
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\layout.resfiles
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\layout.resfiles.intermediate
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\resources.resfiles
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\resources.resfiles.intermediate
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\pri.resfiles
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\pri.resfiles.intermediate
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\qualifiers.txt
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\qualifiers.txt.intermediate
+E:\AdventureWorks\VoiceCommandService\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\AdventureWorks - backup\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.winmd
+E:\AdventureWorks - backup\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.pdb
+E:\AdventureWorks - backup\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.pri
+E:\AdventureWorks - backup\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.dll
+E:\AdventureWorks - backup\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.pdb
+E:\AdventureWorks - backup\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.pri
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.winmd
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.pdb
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.winmdobj
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.compile.pdb
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\priconfig.xml
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\priconfig.xml.intermediate
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\layout.resfiles
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\layout.resfiles.intermediate
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\resources.resfiles
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\resources.resfiles.intermediate
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\pri.resfiles
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\pri.resfiles.intermediate
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\qualifiers.txt
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\qualifiers.txt.intermediate
+E:\AdventureWorks - backup\VoiceCommandService\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.winmd
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.pdb
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.VoiceCommands.pri
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.dll
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.pdb
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\bin\x86\Debug\AdventureWorks.Shared.pri
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\VoiceCommandService.csprojResolveAssemblyReference.cache
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.winmd
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.pdb
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.winmdobj
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\AdventureWorks.VoiceCommands.compile.pdb
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\priconfig.xml
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\priconfig.xml.intermediate
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\layout.resfiles
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\layout.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\resources.resfiles
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\resources.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\pri.resfiles
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\pri.resfiles.intermediate
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\qualifiers.txt
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\qualifiers.txt.intermediate
+E:\微软项目\交付\AdventureWorks\VoiceCommandService\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
