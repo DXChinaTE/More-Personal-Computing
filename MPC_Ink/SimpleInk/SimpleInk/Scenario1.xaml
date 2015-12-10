@@ -1,0 +1,100 @@
+﻿<Page
+    x:Class="SimpleInk.Scenario1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleInk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid x:Name="RootGrid" Margin="12,20,12,12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,0,0,10">
+                <TextBlock x:Uid="textDescription" Text="Description:" Style="{StaticResource SampleHeaderTextStyle}"/>
+                <TextBlock x:Name="textDes" Style="{StaticResource ScenarioDescriptionTextStyle}" TextWrapping="Wrap"/>
+            </StackPanel>
+            <Grid x:Name="outputGrid" Grid.Row="1" HorizontalAlignment="Stretch"
+                  Background="{ThemeResource SystemControlBackgroundChromeWhiteBrush}" 
+                  BorderBrush="{StaticResource SplitViewPaneBackgroundColor}" BorderThickness="2">
+                <!-- Inking area -->
+                <InkCanvas x:Name="inkCanvas"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <CommandBar Background="{StaticResource SplitViewPaneBackgroundColor}">
+                    <AppBarButton x:Uid="AppBarBrushType" x:Name="AppBarBrushType" Label="Pen Type" HorizontalAlignment="Left" Tapped="AppBarBrushType_Tapped" Icon="Edit">
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutPenType" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <TextBlock x:Uid="textBallpoint" Text="Ballpoint"  Tag="Ballpoint" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="PenType_Tapped"/>
+                                    <TextBlock x:Uid="textHighlighter" Text="Highlighter" Tag="Highlighter" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="PenType_Tapped"/>
+                                    <TextBlock x:Uid="textCalligraphy" Text="Calligraphy" Tag="Calligraphy" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="PenType_Tapped"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                    <AppBarButton x:Uid="AppBarThickness" x:Name="AppBarThickness" Label="Pen Thickness" Tapped="AppBarThickness_Tapped">
+                        <AppBarButton.Icon>
+                            <BitmapIcon UriSource="ms-appx:///Assets/Thickness.png"/>
+                        </AppBarButton.Icon>
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutPenThickness" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <TextBlock x:Uid="textSmallest" Text="Smallest" Tag="0" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textSmall" Text="Small" Tag="1" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textMedium" Text="Medium" Tag="2" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textLarge" Text="Large" Tag="3" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textLargest" Text="Largest" Tag="4" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                    <AppBarButton x:Uid="AppBarColor" x:Name="AppBarColor" Label="Color" Tapped="AppBarColor_Tapped">
+                        <AppBarButton.Icon>
+                            <BitmapIcon UriSource="ms-appx:///Assets/Color.png"/>
+                        </AppBarButton.Icon>
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutColor" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <Border Background="Red" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Green" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Blue" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Yellow" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                    <AppBarButton x:Uid="AppBarTouch" x:Name="AppBarTouch" Label="Touch" Tapped="AppBarTouch_Tapped">
+                        <AppBarButton.Icon>
+                            <BitmapIcon UriSource="ms-appx:///Assets/Touch.png"/>
+                        </AppBarButton.Icon>
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutTouch" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <TextBlock x:Uid="textEnableInking" Text="Enable Touch Inking" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TouchInking_Tap"/>
+                                    <TextBlock x:Uid="textUnEnableInking" Text="UnEnable Touch Inking" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="UnTouchInking_Tap"/>
+                                    <TextBlock x:Uid="textEnableErasing" Text="Enable Erasing Mode" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="ErasingMode_Tap"/>
+                                    <TextBlock x:Uid="textUnEnableErasing" Text="UnEnable Erasing Mode" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="UnErasingMode_Tap"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                    <CommandBar.SecondaryCommands>
+                        <AppBarButton x:Uid="AppBarAdd" x:Name="AppBarAdd" Label="Add" Icon="Add" Tapped="OnLoadAsync"/>
+                    </CommandBar.SecondaryCommands>
+                </CommandBar>
+            </Grid>
+            <Grid Grid.Row="3" Background="{StaticResource SplitViewPaneBackgroundColor}">
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button x:Uid="btnClear1" x:Name="btnClear" Content="清除" Width="100" Tapped="btnClear_Tapped"/>
+                    <Button x:Uid="btnSave1" x:Name="btnSave" Content="保存"  Width="100" Margin="20,10" Tapped="OnSaveAsync"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

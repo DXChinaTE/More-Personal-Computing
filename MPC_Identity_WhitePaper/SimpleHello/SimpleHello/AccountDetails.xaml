@@ -1,0 +1,340 @@
+﻿<Page
+    x:Class="SimpleHello.AccountDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource AccountDetailsBackgroundColor}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" x:Name="leftGrid"  Background="{StaticResource SplitViewPaneBackgroundColor}" Width="220" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textWelcome" Grid.Row="0" Foreground="White" Margin="20,40,30,0"
+                       FontSize="36" HorizontalAlignment="Center" />
+            <TextBlock x:Uid="textWelcomeText" x:Name="textWelcomeText" Grid.Row="1" Foreground="White" Margin="20,10,30,0"
+                       FontSize="36" HorizontalAlignment="Center" />
+            <StackPanel Grid.Row="2" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <!--<TextBlock x:Uid="textSignout" x:Name="textSignout"  Foreground="White" Text="退出"  Tapped="textSignout_Tapped"
+                       FontSize="16"/>-->
+            </StackPanel>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="40,30,30,0">
+                <Image Source="Assets/operation.png" Margin="0,0,10,0"/>
+                <TextBlock x:Uid="textOperation" Foreground="White" Text="常用操作" Margin="0,30,0,30"
+                       FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Image Grid.Row="3" Source="Assets/arrow.png" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,30,0,0" Width="14" Height="23"/>
+            <Line Grid.Row="3" VerticalAlignment="Top" Margin="0,28,0,0" Stroke="{StaticResource lineLeftColor}" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+            <Line Grid.Row="3" VerticalAlignment="Bottom" Stroke="{StaticResource lineLeftColor}" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+            <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="40,0,30,0">
+                <Image Source="Assets/investment.png"  Margin="0,0,10,0"/>
+                <TextBlock x:Uid="textInvestment" Foreground="White" Text="投资理财" Margin="0,30,0,30"
+                       FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Line Grid.Row="4" VerticalAlignment="Bottom" Stroke="{StaticResource lineLeftColor}" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+            <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="40,0,30,0">
+                <Image Source="Assets/life.png"  Margin="0,0,10,0"/>
+                <TextBlock x:Uid="textLife" Foreground="White" Text="生活理财" Margin="0,30,0,30"
+                       FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Line Grid.Row="5" VerticalAlignment="Bottom" Stroke="{StaticResource lineLeftColor}" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+            <StackPanel Grid.Row="6" Orientation="Horizontal" Margin="40,0,30,0">
+                <Image Source="Assets/service.png"  Margin="0,0,10,0"/>
+                <TextBlock x:Uid="textService" Foreground="White" Text="业务服务" Margin="0,30,0,30"
+                       FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Line Grid.Row="6" VerticalAlignment="Bottom" Stroke="{StaticResource lineLeftColor}" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+            <Grid Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <TextBlock x:Uid="textSignout" x:Name="textSignout"  Foreground="White" Text="退出"  Tapped="textSignout_Tapped" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,60"
+                       FontSize="16"/>
+            </Grid>
+        </Grid>
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" VerticalScrollMode="Auto" HorizontalScrollMode="Disabled">
+            <Grid  x:Name="mainGrid" Background="{StaticResource AccountDetailsBackgroundColor}" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="{StaticResource AccountDetailsTopBackgroundColor}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel x:Name="titlePanel" Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock x:Uid="textAccount" Foreground="White" Text="账  户" Margin="40,20,20,20"
+                       FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="|" Foreground="White" VerticalAlignment="Center" />
+                        <TextBlock x:Uid="textTransfer" Foreground="White" Text="转  账" Margin="20,20" Tapped="TextBlock_Tapped"
+                       FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="|" Foreground="White" VerticalAlignment="Center" />
+                        <TextBlock x:Uid="textCross" Foreground="White" Text="跨行通" Margin="20,20"
+                       FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="|" Foreground="White" VerticalAlignment="Center" />
+                        <TextBlock x:Uid="textLoan" Foreground="White" Text="贷  款" Margin="20,20"
+                       FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="|" Foreground="White" VerticalAlignment="Center" />
+                        <TextBlock x:Uid="textCredit" Foreground="White" Text="信用卡" Margin="20,20"
+                       FontSize="18" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Line Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Stroke="{StaticResource lineLeftColor}" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+                    <Line x:Name="titleLine" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Stroke="#073976" Stretch="Fill" StrokeThickness="3" X1="0" Y1="0" X2="1" Y2="0" Width="120"/>
+                    <RelativePanel Grid.Row="1" >
+                        <Grid x:Name="infoGrid1"  Background="White" HorizontalAlignment="Left" Margin="40,20,0,0" Width="260" Height="90">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#62C6F8" Height="38" Width="300" >
+                                <Image Source="Assets/total_a.png" Width="30" Height="30" Margin="10,4,0,4"/>
+                                <TextBlock x:Uid="textTotala" Foreground="White" Text="总资产" Margin="10,8,0,6" FontSize="18"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                                <TextBlock Grid.Row="1" Foreground="#073976" Text="￥" FontSize="16" Margin="20,14,0,10"/>
+                                <TextBlock Grid.Row="1" Foreground="#073976" Text="102,534.69" FontSize="22" Margin="10,9,0,10"/>
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="infoGrid2" RelativePanel.RightOf="infoGrid1" Background="White" HorizontalAlignment="Left" Margin="40,20,0,0" Width="260" Height="90">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#F47A53" Height="38" Width="300">
+                                <Image Source="Assets/total_s.png" Width="30" Height="30" Margin="10,4,0,4"/>
+                                <TextBlock x:Uid="textTotall" Foreground="White" Text="总负债" Margin="10,8,0,6" FontSize="18"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                                <TextBlock  Foreground="#073976" Text="￥" FontSize="16" Margin="20,14,0,10"/>
+                                <TextBlock  Foreground="Red" Text="0.00" FontSize="22" Margin="10,9,0,10"/>
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="infoGrid3" RelativePanel.RightOf="infoGrid2" Background="White" HorizontalAlignment="Left" Margin="40,20,0,20" Width="260" Height="90">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#15C2D2" Height="38" Width="300">
+                                <Image Source="Assets/total_a.png" Width="30" Height="30" Margin="10,4,0,4"/>
+                                <TextBlock x:Uid="textAccountCount" Foreground="White" Text="总账户数" Margin="10,8,0,6" FontSize="18"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                                <TextBlock Grid.Row="1" Foreground="#073976" Text="3" FontSize="22" Margin="50,9,0,10"/>
+                                <TextBlock x:Uid="textNumTip" Grid.Row="1" Foreground="#073976" Text="个" FontSize="16" Margin="10,14,0,10"/>
+                            </StackPanel>
+                        </Grid>
+                    </RelativePanel>
+                </Grid>
+
+                <RelativePanel  Grid.Row="1" Background="Transparent">
+                    <Grid x:Name="detailGrid1" Background="White" Width="480" Margin="40,30,0,0" HorizontalAlignment="Left">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.ColumnSpan="3" Background="#3873AD">
+                            <TextBlock Grid.Row="1" Foreground="White" Text="6235 2897 3123 0982" FontSize="20" Margin="10,6,10,6"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="8,6,0,6">
+                            <TextBlock x:Uid="textAccountType" Grid.Row="1" Foreground="#565656" Text="账户类型" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock x:Uid="textAccountType1" Grid.Row="1" Foreground="#586E95" Text="一卡通" FontSize="18" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="12,6">
+                            <TextBlock x:Uid="textAccountName" Grid.Row="1" Foreground="#565656" Text="账户别名" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock x:Uid="textAccountName1" Grid.Row="1" Foreground="#586E95" Text="生活卡" FontSize="18" Margin="12,0" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="2" Margin="12,6">
+                            <TextBlock x:Uid="textBalance" Grid.Row="1" Foreground="#565656" Text="余额" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Row="1" Foreground="#586E95" Text="￥ 350,42.42" FontSize="18" Margin="12,0"/>
+                        </StackPanel>
+                        <Line Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+                        <TextBlock x:Uid="textTransfermoney" Grid.Row="2" Grid.Column="0" Foreground="#7B7B7B" Text="转账汇款" Tag="1" FontSize="18" HorizontalAlignment="Center" Margin="6" Tapped="transfer_Tapped"/>
+                        <Line Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="0" Y2="1"/>
+                        <TextBlock x:Uid="textCheckbill" Grid.Row="2" Grid.Column="1" Foreground="#7B7B7B" Text="查看账单" Tag="1" FontSize="18" HorizontalAlignment="Center" Margin="6" Tapped="bill_Tapped"/>
+                        <Line Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="0" Y2="1"/>
+                        <TextBlock x:Uid="textfinancialmanage" Grid.Row="2" Grid.Column="2" Foreground="#7B7B7B" Text="购买理财" FontSize="18" HorizontalAlignment="Center" Margin="6"/>
+                    </Grid>
+                    <Grid x:Name="detailGrid2" RelativePanel.RightOf="detailGrid1" Background="White" Width="480" Margin="40,30,0,0" HorizontalAlignment="Left">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.ColumnSpan="3" Background="#3873AD">
+                            <TextBlock Grid.Row="1" Foreground="White" Text="6225 9677 4020 8749" FontSize="20" Margin="10,6,10,6"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="12,6">
+                            <TextBlock x:Uid="textAccountType" Grid.Row="1" Foreground="#565656" Text="账户类型" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock x:Uid="textAccountType2" Grid.Row="1" Foreground="#586E95" Text="信用卡" FontSize="18" Margin="12,0" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="12,6">
+                            <TextBlock x:Uid="textAccountName" Grid.Row="1" Foreground="#565656" Text="账户别名" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock x:Uid="textAccountName2" Grid.Row="1" Foreground="#586E95" Text="消费卡" FontSize="18"  HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="2" Margin="12,6">
+                            <TextBlock x:Uid="textBalance" Grid.Row="1" Foreground="#565656" Text="余额" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Row="1" Foreground="#586E95" Text="￥ -520.32" FontSize="18" Margin="12,0"/>
+                        </StackPanel>
+                        <Line Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+                        <TextBlock x:Uid="textTransfermoney" Grid.Row="2" Grid.Column="0" Foreground="#7B7B7B" Text="转账汇款" Tag="2" FontSize="18" HorizontalAlignment="Center" Margin="6" Tapped="transfer_Tapped"/>
+                        <Line Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="0" Y2="1"/>
+                        <TextBlock x:Uid="textCheckbill" Grid.Row="2" Grid.Column="1" Foreground="#7B7B7B" Text="查看账单" Tag="2" FontSize="18" HorizontalAlignment="Center" Margin="6" Tapped="bill_Tapped"/>
+                        <Line Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="0" Y2="1"/>
+                        <TextBlock x:Uid="textfinancialmanage" Grid.Row="2" Grid.Column="2" Foreground="#7B7B7B" Text="购买理财" FontSize="18" HorizontalAlignment="Center" Margin="6"/>
+                    </Grid>
+                    <Grid x:Name="detailGrid3" RelativePanel.Below="detailGrid1" Background="White" Width="480" Margin="40,30,0,30" HorizontalAlignment="Left">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.ColumnSpan="3" Background="#3873AD">
+                            <TextBlock Grid.Row="1" Foreground="White" Text="6532 7282 0980 1097" FontSize="20" Margin="10,6,10,6"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="12,6">
+                            <TextBlock  x:Uid="textAccountType" Grid.Row="1" Foreground="#565656" Text="账户类型" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock x:Uid="textAccountType3" Grid.Row="1" Foreground="#586E95" Text="借记卡" FontSize="18" Margin="12,0" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="12,6">
+                            <TextBlock x:Uid="textAccountName" Grid.Row="1" Foreground="#565656" Text="账户别名" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock x:Uid="textAccountName3" Grid.Row="1" Foreground="#586E95" Text="工资卡" FontSize="18" Margin="12,0" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="2" Margin="12,6">
+                            <TextBlock x:Uid="textBalance" Grid.Row="1" Foreground="#565656" Text="余额" FontSize="16" Margin="10,6" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Row="1" Foreground="#586E95" Text="￥ 680,12.59" FontSize="18" Margin="12,0"/>
+                        </StackPanel>
+                        <Line Grid.Row="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="1" Y2="0"/>
+                        <TextBlock x:Uid="textTransfermoney" Grid.Row="2" Grid.Column="0" Foreground="#7B7B7B" Text="转账汇款" Tag="3" FontSize="18" HorizontalAlignment="Center" Margin="6" Tapped="transfer_Tapped"/>
+                        <Line Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="0" Y2="1"/>
+                        <TextBlock x:Uid="textCheckbill" Grid.Row="2" Grid.Column="1" Foreground="#7B7B7B" Text="查看账单" Tag="3" FontSize="18" HorizontalAlignment="Center" Margin="6" Tapped="bill_Tapped"/>
+                        <Line Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Stroke="#D7D7D7" Stretch="Fill" StrokeThickness="1" X1="0" Y1="0" X2="0" Y2="1"/>
+                        <TextBlock  x:Uid="textfinancialmanage" Grid.Row="2" Grid.Column="2" Foreground="#7B7B7B" Text="购买理财" FontSize="18" HorizontalAlignment="Center" Margin="6"/>
+                    </Grid>
+                </RelativePanel>
+            </Grid>
+        </ScrollViewer>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <!-- First set of VisualStates are simple responsive states based on window size. AdaptiveTrigger is a built-in trigger that XAML knows to automatically trigger based on window size -->
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <!-- Trigger below indicates that this VisualState is to be applied when the current window width is >= 720 effective pixels -->
+                        <AdaptiveTrigger MinWindowWidth="1350" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <!-- Trigger below indicates that this VisualState is to be applied when current window width is >=0 and <720 effective pixels -->
+                        <AdaptiveTrigger MinWindowWidth="1200" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="detailGrid2.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="detailGrid2.(RelativePanel.Below)" Value="detailGrid1" />
+                        <Setter Target="detailGrid3.(RelativePanel.Below)" Value="detailGrid2" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <!-- Trigger below indicates that this VisualState is to be applied when current window width is >=0 and <720 effective pixels -->
+                        <AdaptiveTrigger MinWindowWidth="900" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        
+                        <Setter Target="detailGrid2.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="detailGrid2.(RelativePanel.Below)" Value="detailGrid1" />
+                        <Setter Target="detailGrid3.(RelativePanel.Below)" Value="detailGrid2" />
+                        <Setter Target="infoGrid3.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="infoGrid3.(RelativePanel.Below)" Value="infoGrid1" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <!-- Trigger below indicates that this VisualState is to be applied when current window width is >=0 and <720 effective pixels -->
+                        <AdaptiveTrigger MinWindowWidth="700" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="leftGrid.Visibility" Value="Collapsed" />
+                        <Setter Target="detailGrid2.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="detailGrid2.(RelativePanel.Below)" Value="detailGrid1" />
+                        <Setter Target="detailGrid3.(RelativePanel.Below)" Value="detailGrid2" />
+                        <Setter Target="infoGrid3.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="infoGrid3.(RelativePanel.Below)" Value="infoGrid1" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                         <!--Trigger below indicates that this VisualState is to be applied when current window width is >=0 and <720 effective pixels--> 
+                        <AdaptiveTrigger MinWindowWidth="520" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="leftGrid.Visibility" Value="Collapsed" />
+                        <Setter Target="detailGrid2.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="detailGrid2.(RelativePanel.Below)" Value="detailGrid1" />
+                        <Setter Target="detailGrid3.(RelativePanel.Below)" Value="detailGrid2" />
+                        <Setter Target="infoGrid2.(RelativePanel.RightOf)" Value=""/>
+                        <Setter Target="infoGrid2.(RelativePanel.Below)" Value="infoGrid1"/>
+                        <Setter Target="infoGrid3.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="infoGrid3.(RelativePanel.Below)" Value="infoGrid2" />
+                        <Setter Target="detailGrid1.Margin" Value="10,20"/>
+                        <Setter Target="detailGrid2.Margin" Value="10,20"/>
+                        <Setter Target="detailGrid3.Margin" Value="10,20"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                         <!--Trigger below indicates that this VisualState is to be applied when current window width is >=0 and <720 effective pixels--> 
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="leftGrid.Visibility" Value="Collapsed" />
+                        <Setter Target="detailGrid2.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="detailGrid2.(RelativePanel.Below)" Value="detailGrid1" />
+                        <Setter Target="detailGrid3.(RelativePanel.Below)" Value="detailGrid2" />
+                        <Setter Target="infoGrid2.(RelativePanel.RightOf)" Value=""/>
+                        <Setter Target="infoGrid2.(RelativePanel.Below)" Value="infoGrid1"/>
+                        <Setter Target="infoGrid3.(RelativePanel.RightOf)" Value="" />
+                        <Setter Target="infoGrid3.(RelativePanel.Below)" Value="infoGrid2" />
+                        <Setter Target="detailGrid1.Margin" Value="10,20"/>
+                        <Setter Target="detailGrid2.Margin" Value="10,20"/>
+                        <Setter Target="detailGrid3.Margin" Value="10,20"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</Page>

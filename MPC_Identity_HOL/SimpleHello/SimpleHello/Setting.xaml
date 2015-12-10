@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="SimpleHello.Setting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid Margin="12,10,12,12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" x:Uid="textLanguageTitle" Text="选择语言:" FontFamily="Segoe UI" FontWeight="Light" FontSize="26.667" Foreground="{StaticResource SplitViewPaneBackgroundColor}" Margin="12,10,12,12"/>
+            <ComboBox Grid.Row="1" x:Name="cmbLanguage" MaxWidth="500" VerticalAlignment="Center" SelectionChanged="cmbLanguage_SelectionChanged"  HorizontalAlignment="Left" Margin="12,30"/>
+            <TextBlock Grid.Row="2" x:Uid="txtLanguageTip" x:Name="txtLanguageTip" FontFamily="Segoe UI" FontWeight="Light" FontSize="16" Foreground="{StaticResource SplitViewPaneBackgroundColor}" TextWrapping="Wrap" Visibility="Collapsed" Margin="14,12,12,12"/>
+            <Button Grid.Row="3" x:Uid="btnClose" x:Name="btnClose" Style="{StaticResource ButtonStyle}" Click="Button_Click" Margin="12,12,12,12" Visibility="Collapsed"/>
+            <TextBlock Grid.Row="4" x:Uid="textClearTitle" Text="缓存:" FontFamily="Segoe UI" FontWeight="Light" FontSize="26.667" Foreground="{StaticResource SplitViewPaneBackgroundColor}" Margin="12,10,12,12"/>
+            <Button Grid.Row="5" x:Uid="btnClearAccount" x:Name="btnClearAccount" Style="{StaticResource ButtonStyle}" Click="btnClearAccount_Click"  Margin="12,12,12,12" />
+        </Grid>
+    </Grid>
+</Page>

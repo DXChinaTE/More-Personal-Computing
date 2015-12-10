@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="SimpleHello.SignIn"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid x:Name="RootGrid" VerticalAlignment="Center" HorizontalAlignment="Center"  Width="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Uid="textBank" Grid.Row="0" Foreground="{StaticResource TextForegroundColor}" Text="DX Bank" 
+                       FontSize="56" HorizontalAlignment="Center" Margin="0,80,0,60"/>
+            <Grid Grid.Row="1" Background="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Uid="textUsername" Grid.Row="0" Grid.Column="0" Text="Username:" Foreground="{StaticResource TextForegroundColor}"
+                           HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Center" Margin="0,14,10,20"/>
+                <TextBlock x:Uid="textPsd" Grid.Row="2" Grid.Column="0" Text="Password:" Foreground="{StaticResource TextForegroundColor}" 
+                           HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Center" Margin="0,14,10,20"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="textbox_Username" Height="45"  HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="passwordbox_Password" Height="45"  HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+            </Grid>
+            <StackPanel Grid.Row="2" Orientation="Horizontal"  HorizontalAlignment="Right" Margin="0,28,0,20">
+                <TextBlock x:Uid="textError" x:Name="textblock_ErrorField" Foreground="Red" Margin="0,12,30,0"
+                           VerticalAlignment="Stretch" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                <Button x:Uid="btnSelectUser" x:Name="btnSelectUser" Content="Other accounts" Click="Button_Select_Click"  Height="45" Width="140"
+                        HorizontalAlignment="Right" Style="{StaticResource ButtonStyle}"/>
+                <Button x:Uid="btnSignin" Content="Sign In" Click="Button_SignIn_Click" Height="45" Width="90"
+                        HorizontalAlignment="Right" Style="{StaticResource ButtonStyle}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

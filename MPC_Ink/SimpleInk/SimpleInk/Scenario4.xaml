@@ -1,0 +1,86 @@
+﻿<Page
+    x:Class="SimpleInk.Scenario4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleInk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid x:Name="RootGrid" Margin="12,10,12,12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,0,0,10">
+                <TextBlock x:Uid="textDescription" Text="Description:" Style="{StaticResource SampleHeaderTextStyle}"/>
+                <TextBlock x:Name="textDes" Style="{StaticResource ScenarioDescriptionTextStyle}" TextWrapping="Wrap"/>
+            </StackPanel>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton x:Uid="radioBtnClient" x:Name="radioBtnClient" Content="客户端" IsChecked="True"/>
+                    <RadioButton x:Uid="radioBtnServer" x:Name="radioBtnServer" Content="服务端" IsChecked="False"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtBoxAddress" Width="180" Height="28"/>
+                    <Button x:Uid="btnConnect" x:Name="btnConnect" Style="{StaticResource ButtonStyle}" Content="连接" Width="100" Margin="20,10,0,10" Tapped="btnConnect_Tapped"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="outputGrid" Grid.Row="3" HorizontalAlignment="Stretch"
+                  Background="{ThemeResource SystemControlBackgroundChromeWhiteBrush}" 
+                  BorderBrush="{StaticResource SplitViewPaneBackgroundColor}" BorderThickness="2">
+                <!-- Inking area -->
+                <Canvas x:Name="selectionCanvas"/>
+                <InkCanvas x:Name="inkCanvas" Height="Auto"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <CommandBar Background="{StaticResource SplitViewPaneBackgroundColor}">
+                    <AppBarButton x:Uid="AppBarThickness" x:Name="AppBarThickness" Label="Pen Thickness" Tapped="AppBarThickness_Tapped">
+                        <AppBarButton.Icon>
+                            <BitmapIcon UriSource="ms-appx:///Assets/Thickness.png"/>
+                        </AppBarButton.Icon>
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutPenThickness" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <TextBlock x:Uid="textSmallest" Text="Smallest" Tag="0" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textSmall" Text="Small" Tag="1" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textMedium" Text="Medium" Tag="2" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textLarge" Text="Large" Tag="3" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                    <TextBlock x:Uid="textLargest" Text="Largest" Tag="4" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Tapped="TextBlockThickness_Tapped"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                    <AppBarButton x:Uid="AppBarColor" x:Name="AppBarColor" Label="Color" Tapped="AppBarColor_Tapped">
+                        <AppBarButton.Icon>
+                            <BitmapIcon UriSource="ms-appx:///Assets/Color.png"/>
+                        </AppBarButton.Icon>
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutColor" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <Border Background="Red" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Green" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Blue" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Yellow" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                </CommandBar>
+            </Grid>
+            <Grid Grid.Row="5" Background="{StaticResource SplitViewPaneBackgroundColor}">
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button x:Uid="btnClear1" x:Name="btnClear" Content="清除" Width="100" Tapped="btnClear_Tapped"/>
+                    <Button x:Uid="btnSave1" x:Name="btnSave" Content="保存"  Width="100" Margin="20,10" Tapped="OnSaveAsync"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

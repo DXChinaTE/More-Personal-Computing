@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="SimpleInk.Scenario3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleInk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid x:Name="RootGrid" Margin="8,10,8,12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,0,0,10">
+                <TextBlock x:Uid="textDescription" Text="Description:" Style="{StaticResource SampleHeaderTextStyle}"/>
+                <TextBlock x:Name="textDes" Style="{StaticResource ScenarioDescriptionTextStyle}" TextWrapping="Wrap"/>
+            </StackPanel>
+            <Grid x:Name="outputGrid" Grid.Row="1" HorizontalAlignment="Stretch"
+                  Background="{ThemeResource SystemControlBackgroundChromeWhiteBrush}" 
+                  BorderBrush="{StaticResource SplitViewPaneBackgroundColor}" BorderThickness="2">
+                <!-- Inking area -->
+                <Canvas x:Name="selectionCanvas"/>
+                <InkCanvas x:Name="inkCanvas" Height="Auto"/>
+            </Grid>
+            <Grid Grid.Row="2" Margin="0,-2,0,0">
+                <CommandBar  Background="{StaticResource SplitViewPaneBackgroundColor}">
+                    <AppBarButton x:Uid="AppBarCut" x:Name="AppBarCut" Label="Cut" Icon="Cut" Click="OnCut"/>
+                    <AppBarButton x:Uid="AppBarCopy" x:Name="AppBarCopy" Label="Copy" Icon="Copy" Click="OnCopy"/>
+                    <AppBarButton x:Uid="AppBarPaste" x:Name="AppBarPaste" Label="Paste" Icon="Paste" Click="OnPaste">
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="FlyoutColor" FlyoutPresenterStyle="{StaticResource FlyoutStyle}">
+                                <StackPanel>
+                                    <Border Background="Red" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Green" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Blue" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                    <Border Background="Yellow" Margin="0,10,0,10" Width="20" Height="20" Tapped="OnPenColorChanged"/>
+                                </StackPanel>
+                            </Flyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </AppBarButton>
+                </CommandBar>
+            </Grid>
+            <Grid Grid.Row="3" Background="{StaticResource SplitViewPaneBackgroundColor}" Margin="0,-2,0,0">
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button x:Uid="btnClear1" x:Name="btnClear" Content="清除" Width="100" Click="OnClear"/>
+                    <Button x:Uid="btnSave1" x:Name="btnSave" Content="保存"  Margin="20,10" Width="100" Click="OnSaveAsync"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

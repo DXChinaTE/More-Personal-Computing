@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnLater.Content" xml:space="preserve">
+    <value>以后再说</value>
+  </data>
+  <data name="btnStartHello.Content" xml:space="preserve">
+    <value>开始使用 Windows Hello</value>
+  </data>
+  <data name="hyperlinkButton1.Content" xml:space="preserve">
+    <value>它真的安全吗？</value>
+  </data>
+  <data name="hyperlinkButton2.Content" xml:space="preserve">
+    <value>我只知道PIN,我该怎么做？</value>
+  </data>
+  <data name="SelecteHelloDs1" xml:space="preserve">
+    <value>好消息 {0}！您的设备支持Windows Hello，您可以在我们的应用程序中使用Windows Hello登录，而不需要记住您的密码了。</value>
+  </data>
+  <data name="SelecteHelloDs2" xml:space="preserve">
+    <value>您想在您的下一次登录时，使用Windows Hello吗？</value>
+  </data>
+  <data name="textBank.Text" xml:space="preserve">
+    <value>DX  银行</value>
+  </data>
+  <data name="btnSignin.Content" xml:space="preserve">
+    <value>登 录</value>
+  </data>
+  <data name="textError.Text" xml:space="preserve">
+    <value>请输入用户名或密码</value>
+  </data>
+  <data name="textPsd.Text" xml:space="preserve">
+    <value>密码:</value>
+  </data>
+  <data name="textUsername.Text" xml:space="preserve">
+    <value>用户名:</value>
+  </data>
+  <data name="addusertip" xml:space="preserve">
+    <value>添加另一个用户</value>
+  </data>
+  <data name="btnClose.Content" xml:space="preserve">
+    <value>关闭应用</value>
+  </data>
+  <data name="FeatureName" xml:space="preserve">
+    <value>Windows Hello示例</value>
+  </data>
+  <data name="hellotext" xml:space="preserve">
+    <value> 你好</value>
+  </data>
+  <data name="linkbtnPrivacy.Content" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="linkbtnTrademarks.Content" xml:space="preserve">
+    <value>商标</value>
+  </data>
+  <data name="loginTip" xml:space="preserve">
+    <value>今天您是第{0}次登陆</value>
+  </data>
+  <data name="Scenario1" xml:space="preserve">
+    <value>登录场景</value>
+  </data>
+  <data name="textAccount.Text" xml:space="preserve">
+    <value>账  户</value>
+  </data>
+  <data name="textAccountCount.Text" xml:space="preserve">
+    <value>总账户数</value>
+  </data>
+  <data name="textAccountName.Text" xml:space="preserve">
+    <value>账户别名</value>
+  </data>
+  <data name="textAccountName1.Text" xml:space="preserve">
+    <value>生活卡</value>
+  </data>
+  <data name="textAccountName2.Text" xml:space="preserve">
+    <value>消费卡</value>
+  </data>
+  <data name="textAccountName3.Text" xml:space="preserve">
+    <value>工资卡</value>
+  </data>
+  <data name="textAccountType.Text" xml:space="preserve">
+    <value>账户类型</value>
+  </data>
+  <data name="textAccountType1.Text" xml:space="preserve">
+    <value>一卡通</value>
+  </data>
+  <data name="textAccountType2.Text" xml:space="preserve">
+    <value>信用卡</value>
+  </data>
+  <data name="textAccountType3.Text" xml:space="preserve">
+    <value>借记卡</value>
+  </data>
+  <data name="textBalance.Text" xml:space="preserve">
+    <value>余额</value>
+  </data>
+  <data name="textCheckbill.Text" xml:space="preserve">
+    <value>查看账单</value>
+  </data>
+  <data name="textCopyright.Text" xml:space="preserve">
+    <value>微软公司保留所有权</value>
+  </data>
+  <data name="textCredit.Text" xml:space="preserve">
+    <value>信用卡</value>
+  </data>
+  <data name="textCross.Text" xml:space="preserve">
+    <value>跨行通</value>
+  </data>
+  <data name="textfinancialmanage.Text" xml:space="preserve">
+    <value>购买理财</value>
+  </data>
+  <data name="textHeader.Text" xml:space="preserve">
+    <value>DX 银行 Windows Hello 示例</value>
+  </data>
+  <data name="textInvestment.Text" xml:space="preserve">
+    <value>投资理财</value>
+  </data>
+  <data name="textLanguageTitle.Text" xml:space="preserve">
+    <value>选择语言:</value>
+  </data>
+  <data name="textLife.Text" xml:space="preserve">
+    <value>生活理财</value>
+  </data>
+  <data name="textLoan.Text" xml:space="preserve">
+    <value>贷  款</value>
+  </data>
+  <data name="textNumTip.Text" xml:space="preserve">
+    <value>个</value>
+  </data>
+  <data name="textOperation.Text" xml:space="preserve">
+    <value>常用操作</value>
+  </data>
+  <data name="textSelectUser.Text" xml:space="preserve">
+    <value>选择一个用户:</value>
+  </data>
+  <data name="textService.Text" xml:space="preserve">
+    <value>业务服务</value>
+  </data>
+  <data name="textSetting.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="textTotala.Text" xml:space="preserve">
+    <value>总资产</value>
+  </data>
+  <data name="textTotall.Text" xml:space="preserve">
+    <value>总负债</value>
+  </data>
+  <data name="textTransfer.Text" xml:space="preserve">
+    <value>转  账</value>
+  </data>
+  <data name="textTransfermoney.Text" xml:space="preserve">
+    <value>转账汇款</value>
+  </data>
+  <data name="txtLanguageTip.Text" xml:space="preserve">
+    <value>您必须关闭应用才能切换语言</value>
+  </data>
+  <data name="btnClearAccount.Content" xml:space="preserve">
+    <value>清空账户</value>
+  </data>
+  <data name="textClearTitle.Text" xml:space="preserve">
+    <value>缓存:</value>
+  </data>
+  <data name="textSignout.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="btnSelectUser.Content" xml:space="preserve">
+    <value>其他账号</value>
+  </data>
+  <data name="textTransferTitle.Text" xml:space="preserve">
+    <value>转账汇款</value>
+  </data>
+  <data name="AccountType1" xml:space="preserve">
+    <value>一卡通账号</value>
+  </data>
+  <data name="AccountType2" xml:space="preserve">
+    <value>信用卡账号</value>
+  </data>
+  <data name="AccountType3" xml:space="preserve">
+    <value>借记卡账号</value>
+  </data>
+  <data name="btnTransfer.Content" xml:space="preserve">
+    <value>转 账</value>
+  </data>
+  <data name="textToaccount.Text" xml:space="preserve">
+    <value>收款方账户：</value>
+  </data>
+  <data name="textToname.Text" xml:space="preserve">
+    <value>收款方姓名：</value>
+  </data>
+  <data name="textBillTitle.Text" xml:space="preserve">
+    <value>查看账单</value>
+  </data>
+  <data name="textAccountLabel.Text" xml:space="preserve">
+    <value>付款方账号：</value>
+  </data>
+  <data name="textMoney.Text" xml:space="preserve">
+    <value>   转账金额：</value>
+  </data>
+  <data name="hyplookmonay.Content" xml:space="preserve">
+    <value>查看余额</value>
+  </data>
+  <data name="hyplookassociatedaccount.Content" xml:space="preserve">
+    <value>本人关联账号</value>
+  </data>
+  <data name="hyplookRecipientInfo.Content" xml:space="preserve">
+    <value>收款方信息</value>
+  </data>
+  <data name="hypToaccountTime.Content" xml:space="preserve">
+    <value>到账时间及手续费标准</value>
+  </data>
+  <data name="textEndTime.Text" xml:space="preserve">
+    <value>终止日期</value>
+  </data>
+  <data name="textStartTime.Text" xml:space="preserve">
+    <value>起始日期</value>
+  </data>
+  <data name="btnQueue.Content" xml:space="preserve">
+    <value>查 询</value>
+  </data>
+  <data name="textamount.Text" xml:space="preserve">
+    <value>交易金额</value>
+  </data>
+  <data name="textBalancea.Text" xml:space="preserve">
+    <value>余额</value>
+  </data>
+  <data name="textDate.Text" xml:space="preserve">
+    <value>日期时间</value>
+  </data>
+  <data name="textRemarks.Text" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="textType.Text" xml:space="preserve">
+    <value>交易类型</value>
+  </data>
+  <data name="textTransferInfo.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCloseInfo.Content" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="textTransferSuccess.Text" xml:space="preserve">
+    <value>转账成功</value>
+  </data>
+  <data name="textWelcomeText.Text" xml:space="preserve">
+    <value>您好</value>
+  </data>
+</root>
